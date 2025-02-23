@@ -156,14 +156,14 @@ export const unsyncThread = async (thread: Thread) => {
   );
 };
 export function activate() {
-  ComponentRegistry.register(ThreadSharingButton, {
-    role: 'ThreadActionsToolbarButton',
-  });
-  this._unlisten = DatabaseStore.listen(_onDatabaseChange);
+  // ComponentRegistry.register(ThreadSharingButton, {
+  //   role: 'ThreadActionsToolbarButton',
+  // });
+  // this._unlisten = DatabaseStore.listen(_onDatabaseChange);
 }
 
 export function deactivate() {
-  ComponentRegistry.unregister(ThreadSharingButton);
+  // ComponentRegistry.unregister(ThreadSharingButton);
   if (this._unlisten) {
     this._unlisten();
     this._unlisten = null;

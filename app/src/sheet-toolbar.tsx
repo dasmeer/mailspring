@@ -307,7 +307,9 @@ export default class Toolbar extends React.Component<ToolbarProps, ToolbarState>
     // Record our overall height for sheets
     if (el.clientHeight !== lastReportedToolbarHeight) {
       lastReportedToolbarHeight = el.clientHeight;
-      require('@electron/remote').getCurrentWindow().setSheetOffset(el.clientHeight);
+      require('@electron/remote')
+        .getCurrentWindow()
+        .setSheetOffset(el.clientHeight);
     }
   }
 
@@ -376,8 +378,8 @@ export default class Toolbar extends React.Component<ToolbarProps, ToolbarState>
     return (
       <Flexbox className="item-container" direction="row">
         {elements}
-        <ToolbarSpacer key="spacer-50" order={-50} />
-        <ToolbarSpacer key="spacer+50" order={50} />
+        {/* <ToolbarSpacer key="spacer-50" order={-50} />
+        <ToolbarSpacer key="spacer+50" order={50} /> */}
       </Flexbox>
     );
   }

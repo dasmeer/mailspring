@@ -57,7 +57,7 @@ export default class ModeToggle extends React.Component<
     return (
       <button
         className={`btn btn-toolbar mode-toggle mode-${this.state.hidden}`}
-        style={{ order: 500 }}
+        style={{ order: 500, marginLeft: 'auto' }}
         title={this.state.hidden ? localized('Show Sidebar') : localized('Hide Sidebar')}
         onClick={this._onToggleMode}
       >

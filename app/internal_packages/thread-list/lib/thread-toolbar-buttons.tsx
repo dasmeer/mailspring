@@ -422,13 +422,13 @@ class ThreadArrowButton extends React.Component<
 
 export const FlagButtons = CreateButtonGroup(
   'FlagButtons',
-  [ToggleStarredButton, HiddenToggleImportantButton, ToggleUnreadButton],
+  [ToggleUnreadButton, ToggleStarredButton, HiddenToggleImportantButton],
   { order: -103 }
 );
 
 export const MoveButtons = CreateButtonGroup(
   'MoveButtons',
-  [ArchiveButton, MarkAsSpamButton, HiddenGenericRemoveButton, TrashButton],
+  [TrashButton, ArchiveButton, HiddenGenericRemoveButton, MarkAsSpamButton],
   { order: -107 }
 );
 

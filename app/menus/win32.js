@@ -203,17 +203,17 @@ module.exports = {
         { type: 'separator', id: 'account-shortcuts-separator' },
       ],
     },
-    { type: 'separator' },
-    {
-      role: 'help',
-      label: localized('Help') + '...',
-      command: 'application:view-help',
-    },
-    {
-      label: localized('Getting Started Guide') + '...',
-      command: 'application:view-getting-started',
-    },
-    { label: localized('Mailspring Community') + '...', command: 'application:view-community' },
+    // { type: 'separator' },
+    // {
+    //   role: 'help',
+    //   label: localized('Help') + '...',
+    //   command: 'application:view-help',
+    // },
+    // {
+    //   label: localized('Getting Started Guide') + '...',
+    //   command: 'application:view-getting-started',
+    // },
+    // { label: localized('Mailspring Community') + '...', command: 'application:view-community' },
     { type: 'separator' },
     { label: localized('Sync New Mail Now'), command: 'window:sync-mail-now' },
     { type: 'separator' },
